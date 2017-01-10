@@ -16,14 +16,15 @@
 	- Download a mysql GUI client: <http://www.sequelpro.com/download> and click download
 	- Open downloaded .dmg file
 	- Drag application icon to Applications directory and double click it.
+	- Click 'Socket' as your connection type
 	- Fill in the following info
 		- Host: 127.0.0.1 (same as localhost)
 		- Username: root
 		- Password: root
 	- Click Connect
-	- In the terminal type `CREATE DATABASE wordpress;`
-	- Click the "Run Previous" button (it might also be say "Run Current")
-	- In the terminal type `SHOW DATABASES;`
+	- Open the Sequel Pro (Query) terminal and type `CREATE DATABASE wordpress;`
+	- Click the "Run Previous" button to run it (it might also be say "Run Current")
+	- In the terminal type `SHOW DATABASES;`, then click 'run' again
 	- Confirm that `wordpress` is listed in the output
 1. Back in your web browser, fill out the info like so:
 	- Database Name: wordpress
@@ -35,6 +36,7 @@
 1. Fill out the info on the next page and click "Install Wordpress"
 1. Click "Log In"
 1. Log In
+1. The frontend of your will be visible at http://localhost:8888/
 
 ## Notable GUI Elements
 
