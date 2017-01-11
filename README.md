@@ -1,10 +1,17 @@
 # Wordpress
 
+## What is Wordpress?
+
+Wordpress is a staple in the web community - it's a simple CMS (Content Management System) that allows a non-technical person to CRUD all of their website's info through an easy to use GUI (Graphical User Interface).
+
+Once just a simple blogging platform, WordPress is now used on 27% of public websites - so statistically, you've got a 1 in 4 chance of needing to know how to use it.
+
 ## Set Up
 
-1. Download from <https://wordpress.org/latest.zip>
+1. Download Wordpress from <https://wordpress.org/latest.zip>
 1. Unzip the downloaded file.
-1. Point MAMP to Wordpress Directory
+1. Place it in a local repo that you want to use for the project.
+1. Point MAMP to Wordpress Directory:
 	- Click on Preferences
 	- Click on Web Server
 	- Click the folder icon next to "Document Root" and find the unzipped wordpress directory
@@ -13,7 +20,7 @@
 1. Choose your language
 1. Click "Let's Go!"
 1. Create a `wordpress` sub database in MySQL
-	- Download a mysql GUI client: <http://www.sequelpro.com/download> and click download
+	- Download a mysql GUI client (<http://www.sequelpro.com/download> and click download)
 	- Open downloaded .dmg file
 	- Drag application icon to Applications directory and double click it.
 	- Click 'Socket' as your connection type
@@ -22,7 +29,7 @@
 		- Username: root
 		- Password: root
 	- Click Connect
-	- Open the Sequel Pro (Query) terminal and type `CREATE DATABASE wordpress;`
+	- Open the Sequel Pro (Query) terminal and type `CREATE DATABASE wordpress;` (these commands do not run on `enter`)
 	- Click the "Run Previous" button to run it (it might also be say "Run Current")
 	- In the terminal type `SHOW DATABASES;`, then click 'run' again
 	- Confirm that `wordpress` is listed in the output
@@ -38,19 +45,33 @@
 1. Log In
 1. The frontend of your will be visible at http://localhost:8888/
 
-## Notable GUI Elements
+## Frontend Vrs. Admin
 
-1. Posts
-	- All - show all
-	- New - create a new post
-	- Categories - create categories that are assignable to your posts (e.g. deserts, politics)
-	- Tags - elements covered in a post (e.g. sugar, chocolate, Vermin Supreme)
-1. Media
-	- Add media (images, audio, video) which can be referenced in posts
-1. Pages
-	- For things like About, Contact, Links, Resume, etc.
-1. Comments
-	- Can moderate.  It will email you for each new comment
+Wordpress consists of two 'halves' - the frontend side, which you see by visiting <http://localhost:8888/> and the admin panel, which you see by visiting <http://localhost:8888/wp-admin/>. The Admin panel is where you make changes to the site's appearance, content, and settings. The frontend will display those results.
+
+In the admin panel, you'll see quite a few options for creating content - most notably Posts, Media, and Pages:
+
+**Posts** are the equivalent of individual blog posts. Since Wordpress started as a blogging platform, they still get top billing in the menu, as well as a default place on the homepage of all default templates. Inside this menu, you'll be able to create, edit and delete your posts, as well as tag them, sort them, and assign them to categories.
+
+**Media** acts as a repository of all media on your site - photos, video, music, etc. Anything stored here can be easily refernced using Wordpress' built-in media tools. Clicking the media link will allow you to upload, sort, and categorize all the media on your site.
+
+**Pages** are what we think of tradtionally when it comes to web pages - you might have one for about, contact, home, etc. The pages link will allow you to create, sort, and categorize your pages. 
+
+### What's the difference between posts and pages?
+
+A few key differences:
+
+**Posts** are NOT full pages - they are 'components' that can be inserted into pages - either as a whole, or as a list. There is a `single.php` file that acts as a default wrapper for any posts that is visited by itself, and don't allow you to insert custom page-specific HTML. As a result, posts are good for recurring content that has a distinct pattern and design to it. The list of most recent posts is easy to call into pages dynamically, so that no dev work is needed to update the site.
+
+**Pages** are essentially blank HTML files that will act as a single HTML page. They're good for unique content-rich pages that might differ visually from one another. However, they take a bit more skill to update and assign to the menu. 
+
+## Themes
+
+Most of your work as a developer will take place in `Appearance > Themes`. Clicking into this menu item will show a list of all the themes you have installed. You can choose which one you want to use on the frontend, as well as customize some of the options for each one:
+
+![Themes](img/themes.png)
+
+
 1. Themes
 	- Can add new themes
 	- Can customize themes
