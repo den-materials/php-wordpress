@@ -169,46 +169,46 @@ You can find Wordpress plugins by searching online, or by clicking 'Add New' and
 
 If lots of people are going to be using or contributing to this site, it's probably a good idea to make each one a user, and edit their access abilities:
 
-	- Administrator – somebody who has access to all the administration features within a single site. (Protip: only you)
-	- Editor – somebody who can publish and manage posts including the posts of other users.
-	- Author – somebody who can publish and manage their own posts.
-	- Contributor – somebody who can write and manage their own posts but cannot publish them.
-	- Subscriber – somebody who can only manage their profile.
+- Administrator – somebody who has access to all the administration features within a single site. (Protip: only you)
+- Editor – somebody who can publish and manage posts including the posts of other users.
+- Author – somebody who can publish and manage their own posts.
+- Contributor – somebody who can write and manage their own posts but cannot publish them.
+- Subscriber – somebody who can only manage their profile.
 
 ## Tools
 
-	The most important component of Tools is the import/export option. Everything you write and publish on Wordpress is saved into a SQL database, making it easy to back up and move website locations. Every piece of content is completely seperate from your code and theme, so if your entire site gets deleted, you can easily have it up and running again in minutes with a proper backup.
+The most important component of Tools is the import/export option. Everything you write and publish on Wordpress is saved into a SQL database, making it easy to back up and move website locations. Every piece of content is completely seperate from your code and theme, so if your entire site gets deleted, you can easily have it up and running again in minutes with a proper backup.
 
-	- **Export**: Allows you to download a SQL table of your entire Wordpress site. I highly suggest doing this every 3 months or so, depending on how frequently your site is updated. Your DB will not be backed up via Git, so its essential that you keep multiple copies of it just in case.
+- **Export**: Allows you to download a SQL table of your entire Wordpress site. I highly suggest doing this every 3 months or so, depending on how frequently your site is updated. Your DB will not be backed up via Git, so its essential that you keep multiple copies of it just in case.
 
-	- **Import**: Allows you to upload a Wordpress SQL table, essentially restoring a lost site. Keep in mind though that Wordpress can only run on one DB at a time - you'll have to either overwrite or permanently join your tables in order to update it. 
+- **Import**: Allows you to upload a Wordpress SQL table, essentially restoring a lost site. Keep in mind though that Wordpress can only run on one DB at a time - you'll have to either overwrite or permanently join your tables in order to update it. 
 
 ## Settings
 
-	These settings are a little more forward-facing than you might think. For instance, `Settings > General` is the only place to change the name of your website. Here's a rough breakdown:
+These settings are a little more forward-facing than you might think. For instance, `Settings > General` is the only place to change the name of your website. Here's a rough breakdown:
 
-	- General
-		- Site Name
-		- Site URL
-		- Admin Email Address
-		- Timezones (for automated posting)
+- General
+	- Site Name
+	- Site URL
+	- Admin Email Address
+	- Timezones (for automated posting)
 
-	- Reading
-		- Set your home page (very important)
-		- Set number of posts to display on summary page
-		- Content of feed
-	- Discussion
-		- Comment settings
-			- Who can comment
-			- How long the discussion is open for
-			- Nesting comments
-			- How many comments per page of comments
-			- Comment notification
-			- Comment moderation settings
-	- Media
-		- Set the crop sizes for different image uses in your post
-	- Permalinks
-		- customize how your URL string is used for posts - generally, you'll want this to read well and follow good SEO practices.
+- Reading
+	- Set your home page (very important)
+	- Set number of posts to display on summary page
+	- Content of feed
+- Discussion
+	- Comment settings
+		- Who can comment
+		- How long the discussion is open for
+		- Nesting comments
+		- How many comments per page of comments
+		- Comment notification
+		- Comment moderation settings
+- Media
+	- Set the crop sizes for different image uses in your post
+- Permalinks
+	- customize how your URL string is used for posts - generally, you'll want this to read well and follow good SEO practices.
 
 
 ## Conclusion
