@@ -30,7 +30,7 @@ Once just a simple blogging platform, WordPress is now used on 27% of public web
 		- Password: root
 	- Click Connect
 	- Open the Sequel Pro (Query) terminal and type `CREATE DATABASE wordpress;` (these commands do not run on `enter`)
-	- Click the "Run Previous" button to run it (it might also be say "Run Current")
+	- Click the "Run Previous" button to run it (it might also say "Run Current")
 	- In the terminal type `SHOW DATABASES;`, then click 'run' again
 	- Confirm that `wordpress` is listed in the output
 1. Back in your web browser, fill out the info like so:
