@@ -39,7 +39,7 @@ Once just a simple blogging platform, WordPress is now used on 27% of public web
 	- Password: root
 	- Database Host: localhost
 	- Table Prefix: wp_
-1. Click "Run the intall"
+1. Click "Run the install"
 1. Fill out the info on the next page and click "Install Wordpress"
 1. Click "Log In"
 1. Log In
