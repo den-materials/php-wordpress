@@ -2,7 +2,7 @@
 
 ## What is Wordpress?
 
-Wordpress is a staple in the web community - it's a simple CMS (Content Management System) that allows a non-technical person to CRUD all of their website's info through an easy to use GUI (Graphical User Interface).
+Wordpress is a staple in the web community - it's a simple CMS (Content Management System) that allows a non-technical person to CRUD all of their website's info through an easy-to-use GUI (Graphical User Interface).
 
 Once just a simple blogging platform, WordPress is now used on 27% of public websites - so statistically, you've got a 1 in 4 chance of needing to know how to use it.
 
@@ -16,6 +16,7 @@ Once just a simple blogging platform, WordPress is now used on 27% of public web
 	- Click on Web Server
 	- Click the folder icon next to "Document Root" and find the unzipped wordpress directory
 	- Click OK
+	- Start your server by clicking "Start Servers"
 1. Go to <http://localhost:8888/>
 1. Choose your language
 1. Click "Let's Go!"
@@ -25,7 +26,7 @@ Once just a simple blogging platform, WordPress is now used on 27% of public web
 	- Drag application icon to Applications directory and double click it.
 	- Click 'Socket' as your connection type
 	- Fill in the following info
-		- Host: 127.0.0.1 (same as localhost)
+		- Host: 127.0.0.1 (same as localhost - this doesn't need to be filled in)
 		- Username: root
 		- Password: root
 	- Click Connect
@@ -53,7 +54,7 @@ In the admin panel, you'll see quite a few options for creating content - most n
 
 **Posts** are the equivalent of individual blog posts. Since Wordpress started as a blogging platform, they still get top billing in the menu, as well as a default place on the homepage of all default templates. Inside this menu, you'll be able to create, edit and delete your posts, as well as tag them, sort them, and assign them to categories.
 
-**Media** acts as a repository of all media on your site - photos, video, music, etc. Anything stored here can be easily refernced using Wordpress' built-in media tools. Clicking the media link will allow you to upload, sort, and categorize all the media on your site.
+**Media** acts as a repository of all media on your site - photos, video, music, etc. Anything stored here can be easily referenced using Wordpress' built-in media tools. Clicking the media link will allow you to upload, sort, and categorize all the media on your site.
 
 **Pages** are what we think of tradtionally when it comes to web pages - you might have one for about, contact, home, etc. The pages link will allow you to create, sort, and categorize your pages. 
 
@@ -63,7 +64,7 @@ A few key differences:
 
 **Posts** are NOT full pages - they are 'components' that can be inserted into pages - either as a whole, or as a list. There is a `single.php` file that acts as a default wrapper for any posts that is visited by itself, and don't allow you to insert custom page-specific HTML. As a result, posts are good for recurring content that has a distinct pattern and design to it. The list of most recent posts is easy to call into pages dynamically, so that no dev work is needed to update the site.
 
-**Pages** are essentially blank HTML files that will act as a single HTML page. They're good for unique content-rich pages that might differ visually from one another. However, they take a bit more skill to update and assign to the menu. 
+**Pages** are essentially blank HTML files that will act as a single HTML page. They're good for unique, content-rich pages that might differ visually from one another. However, they take a bit more skill to update and assign to the menu. 
 
 ## Themes
 
