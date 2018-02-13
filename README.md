@@ -44,7 +44,7 @@ Once just a simple blogging platform, WordPress is now used on 27% of public web
 1. Fill out the info on the next page and click "Install Wordpress"
 1. Click "Log In"
 1. Log In
-1. The frontend of your will be visible at http://localhost:8888/
+1. The frontend of your site will be visible at http://localhost:8888/
 
 ## Frontend Vrs. Admin
 
@@ -56,13 +56,13 @@ In the admin panel, you'll see quite a few options for creating content - most n
 
 **Media** acts as a repository of all media on your site - photos, video, music, etc. Anything stored here can be easily referenced using Wordpress' built-in media tools. Clicking the media link will allow you to upload, sort, and categorize all the media on your site.
 
-**Pages** are what we think of tradtionally when it comes to web pages - you might have one for about, contact, home, etc. The pages link will allow you to create, sort, and categorize your pages. 
+**Pages** are what we think of traditionally when it comes to web pages - you might have one for about, contact, home, etc. The pages link will allow you to create, sort, and categorize your pages. 
 
 ### What's the difference between posts and pages?
 
 A few key differences:
 
-**Posts** are NOT full pages - they are 'components' that can be inserted into pages - either as a whole, or as a list. There is a `single.php` file that acts as a default wrapper for any posts that is visited by itself, and don't allow you to insert custom page-specific HTML. As a result, posts are good for recurring content that has a distinct pattern and design to it. The list of most recent posts is easy to call into pages dynamically, so that no dev work is needed to update the site.
+**Posts** are NOT full pages - they are 'components' that can be inserted into pages - either as a whole, or as a list. There is a `single.php` file that acts as a default wrapper for any post that is visited by itself, and it doesn't allow you to insert custom HTML at the page level. As a result, posts are good for recurring content that has a distinct pattern and design to it. The list of most recent posts is easy to call into pages dynamically, so that no dev work is needed to update the site.
 
 **Pages** are essentially blank HTML files that will act as a single HTML page. They're good for unique, content-rich pages that might differ visually from one another. However, they take a bit more skill to update and assign to the menu. 
 
@@ -80,7 +80,7 @@ You can find Wordpress themes virtually anywhere, [just Google it](http://lmgtfy
 
 ### Customizing Themes in Code
 
-Wordpress operates off it's own PHP concept called "The Loop" - it's essentially a For Loop that cycles through all the WP content in an if/then format. For instance, if you wanted to display all the posts you have, you would use the loop like this:
+Wordpress operates off its own PHP concept called "The Loop" - it's essentially a For Loop that cycles through all the WP content in an if/then format. For instance, if you wanted to display all the posts you have, you would use the loop like this:
 
 ```php
 	<?php 
@@ -105,7 +105,7 @@ Inside your current theme directory, you'll see a list of semantically-named fil
 - `page.php`: template for a single HTML page - generally, this is just a generic wrapper that imports the page HTML into it
 - `footer.php`: everything from `</body>` to `</html>`. Useful for adding in scripts that will be included on every page, or copyright information.
 
-As previously stated, the inclusion of and fucntion for these pages vary from template to template. You'll want to read any documentation provided in order to fully grasp how your template works.
+As previously stated, the inclusion of, and function for, these pages vary from template to template. You'll want to read any documentation provided in order to fully grasp how your template works.
 
 #### Calling Partials
 
@@ -116,7 +116,7 @@ Every component of your Wordpress site can be summoned into your theme templates
 - `is_home()`
 	- is home page
 - `is_front_page()`
-	- is this the front page (single page to display, not containing articles
+	- is this the front page (single page to display, not containing articles)
 - `get_sidebar()`
 	- display sidebar
 - `get_footer()`
@@ -144,13 +144,13 @@ Every component of your Wordpress site can be summoned into your theme templates
 - `the_permalink()`
 	- display permalink for the article
 
-> Note: Functions that start with `the_` can usually be prepended with or replaced by `get_`.  When this is done, value is returned, not printed
+> Note: Functions that start with `the_` can usually be prepended with or replaced by `get_`.  When this is done, the value is returned, not printed.
 
 ### Customizing Themes in the Admin Panel
 
 Many themes are designed specifically to not have to be edited by hand. The Admin panel itself has many options for your theme:
 
-- **Customize**: Edit preset features for your theme, in a easy-to-use GUI. The depth of customization here can vary from a few color values, to dozens of pages of tweaks and features. Check here first before editing the code!
+- **Customize**: Edit preset features for your theme, in an easy-to-use GUI. The depth of customization here can vary from a few color values, to dozens of pages of tweaks and features. Check here first before editing the code!
 
 - **Widgets**: Widgets are single-function code snippets that can be placed in sidebars and other 'widget-friendly' areas (these will be defined by the theme, and displayed to the right of the available widgets). Some examples are a calendar, a search box, recent posts, or a tag cloud. 
 
@@ -164,7 +164,7 @@ Many themes are designed specifically to not have to be edited by hand. The Admi
 
 There's a menu option for plugins in the Wordpress Main menu - these are a collection of third-party apps that perform functions ranging from filtering spam to adding eCommerce functionality to your site. Think of these as Wordpress-specific NPM Packages - they can be added in easily to augment the functionality of your site.
 
-You can find Wordpress plugins by searching online, or by clicking 'Add New' and using the search feature built into the GUI. You can even write your own and upload them into the `wp-content > plugins" directory.
+You can find Wordpress plugins by searching online, or by clicking 'Add New' and using the search feature built into the GUI. You can even write your own and upload them into the `wp-content > plugins` directory.
 
 ## Users
 
@@ -180,7 +180,7 @@ If lots of people are going to be using or contributing to this site, it's proba
 
 The most important component of Tools is the import/export option. Everything you write and publish on Wordpress is saved into a SQL database, making it easy to back up and move website locations. Every piece of content is completely seperate from your code and theme, so if your entire site gets deleted, you can easily have it up and running again in minutes with a proper backup.
 
-- **Export**: Allows you to download a SQL table of your entire Wordpress site. I highly suggest doing this every 3 months or so, depending on how frequently your site is updated. Your DB will not be backed up via Git, so its essential that you keep multiple copies of it just in case.
+- **Export**: Allows you to download a SQL table of your entire Wordpress site. I highly suggest doing this every 3 months or so, depending on how frequently your site is updated. Your DB will not be backed up via Git, so it's essential that you keep multiple copies of it just in case.
 
 - **Import**: Allows you to upload a Wordpress SQL table, essentially restoring a lost site. Keep in mind though that Wordpress can only run on one DB at a time - you'll have to either overwrite or permanently join your tables in order to update it. 
 
@@ -209,7 +209,7 @@ These settings are a little more forward-facing than you might think. For instan
 - Media
 	- Set the crop sizes for different image uses in your post
 - Permalinks
-	- customize how your URL string is used for posts - generally, you'll want this to read well and follow good SEO practices.
+	- Customize how your URL string is used for posts - generally, you'll want this to read well and follow good SEO practices.
 
 
 ## Conclusion
