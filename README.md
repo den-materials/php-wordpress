@@ -66,11 +66,23 @@ A few key differences:
 
 **Pages** are essentially blank HTML files that will act as a single HTML page. They're good for unique, content-rich pages that might differ visually from one another. However, they take a bit more skill to update and assign to the menu. 
 
+## Challenge(ish)
+1. Make a new page
+2. Make a new post
+
+Toggle back and forth between the dashboard and front end. Now you're cooking with lightning bolts.
+
 ## Themes
 
 Most of your work as a developer will take place in `Appearance > Themes`. Clicking into this menu item will show a list of all the themes you have installed. You can choose which one you want to use on the frontend, as well as customize some of the options for each one:
 
 ![Themes](img/themes.png)
+
+## Switch a Theme
+
+Take a few minutes to try switching themes. You can see what it's like.
+
+## Diving into the Code
 
 To **really** edit these themes, though, we'll need to go into the code - specifically, `wp-content > themes`
 
@@ -159,6 +171,10 @@ Many themes are designed specifically to not have to be edited by hand. The Admi
 - **Header (or custom)**:  Similar to Customize, only specifically relegated to the home header section. Here you can change the background image of your template header. This might be different or non-existent in other themes. 
 
 - **Editor**: Edit the CSS of the template directly. You'll probably want to do this in your local repo, with your code editor of choice - but keep in mind that some clients might rather you make changes in the admin panel so that they can continue to do so after you hand the project off.
+
+## You Try It
+
+Go to Widgets and messing around with stuff. See if you can change something and then see the changes take effect in the front-facing UI.
 
 ## Plugins
 
